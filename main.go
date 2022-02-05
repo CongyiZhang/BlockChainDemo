@@ -13,7 +13,6 @@ func main() {
 		fmt.Printf("前区块哈希：%x\n\n", block.PreHash)
 		fmt.Printf("当前区块哈希：%x\n\n", block.Hash)
 		fmt.Printf("区块数据：%s\n\n", block.Data)
-		fmt.Println("hello world")
 	}
 
 }
