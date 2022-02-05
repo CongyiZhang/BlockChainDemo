@@ -50,6 +50,10 @@ func NewBlock(data string, preBlockHash []byte) *Block {
 	return &block
 }
 
+func (block *Block) toByte() []byte {
+	return []byte{}
+}
+
 // 3. 生成哈希
 
 func (block *Block) SetHash() {

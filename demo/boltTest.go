@@ -10,6 +10,7 @@ func main() {
 	fmt.Println("hello world")
 
 	db, err := bolt.Open("test.db", 0600, nil)
+	defer db.Close()
 	if err != nil {
 		log.Panic("打开数据库失败")
 	}
